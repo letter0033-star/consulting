@@ -12,7 +12,7 @@
     
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght=400;600;800&display=swap');
         body { font-family: 'Inter', 'Pretendard', sans-serif; }
         
         .custom-scrollbar::-webkit-scrollbar {
@@ -121,10 +121,11 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 xl:grid-cols-12 gap-8">
+            <!-- 상하(Vertical) 2단 구조로 전면 배치: 와이드 모니터에서의 세로 늘어짐 방지 -->
+            <div class="flex flex-col gap-8">
                 
-                <!-- 좌측: 핵심 추천 논문 리스트 -->
-                <div class="xl:col-span-8 bg-white rounded-3xl p-6 md:p-8 shadow-sm border border-emerald-100">
+                <!-- 상단: 핵심 추천 논문 리스트 (전체 너비 사용) -->
+                <div class="w-full bg-white rounded-3xl p-6 md:p-8 shadow-sm border border-emerald-100">
                     <h2 class="text-lg font-extrabold text-slate-800 mb-6 flex items-center gap-2">
                         <span class="w-2 h-6 bg-emerald-500 rounded-full"></span>
                         작은학교 활성화 관련 DBpia AI에이전트 추천 논문
@@ -171,15 +172,15 @@
                     </div>
                 </div>
 
-                <!-- 우측: 기타 논문 및 정책 사례 (사이드-바이-사이드 배치) -->
-                <div class="xl:col-span-4 bg-white rounded-3xl p-6 shadow-sm border border-emerald-100 flex flex-col h-full">
+                <!-- 하단: 기타 논문 및 정책 사례 (전체 너비 사용 및 가로 2단 구성) -->
+                <div class="w-full bg-white rounded-3xl p-6 shadow-sm border border-emerald-100 flex flex-col">
                     <h2 class="text-base md:text-lg font-extrabold text-slate-800 mb-6 flex items-center gap-2">
                         <span class="w-2 h-5 bg-emerald-400 rounded-full"></span>
                         학술 및 정책 사례 통합 데이터베이스
                     </h2>
                     
-                    <!-- 내부 2단 구성 -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 overflow-y-visible">
+                    <!-- 내부 2단 구성 (좌: 기타 논문 / 우: 정책 및 기타) -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         
                         <!-- 좌측: 기타 논문 자료 -->
                         <div class="space-y-4">
