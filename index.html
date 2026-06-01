@@ -32,7 +32,7 @@
             padding-left: 1.75rem; 
             text-indent: -1.75rem; 
             line-height: 1.4;
-            word-break: break-all; /* keep-all에서 break-all로 변경하여 공백 없는 단어도 첫 줄부터 정렬되도록 개선 */
+            word-break: break-all;
             padding-top: 1px;
             padding-bottom: 1px;
         }
@@ -80,14 +80,8 @@
             <div class="flex flex-col sm:flex-row items-center gap-4 bg-emerald-50/50 p-3 md:p-4 rounded-2xl border border-emerald-100/50">
                 <div class="text-center sm:text-right">
                     <p class="text-slate-600 text-[11px] md:text-[13px] font-medium leading-relaxed">
-                        챗봇의 모든 기능(노트북LM 스튜디오) 사용을 원하시는 선생님은 아래 주소로<br class="hidden md:block">
-                        <span class="font-bold text-emerald-700 underline decoration-emerald-300 decoration-2 underline-offset-4">구글계정</span>을 보내주시기 바랍니다.
-                    </p>
-                    <p class="text-emerald-800 font-extrabold text-xs md:text-sm mt-1 flex items-center justify-center sm:justify-end gap-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2-2v10a2 2 0 002 2z" />
-                        </svg>
-                        letter0033@gmail.com
+                        강원특별자치도교육청 컨설턴트 및 작은학교 컨설팅에 참여하는 학교의 교원은<br class="hidden md:block">
+                        <span class="font-bold text-emerald-700 underline decoration-emerald-300 decoration-2 underline-offset-4">이음톡(모산초 김영삼)</span>으로 비밀번호 문의 바랍니다.
                     </p>
                 </div>
 
@@ -145,7 +139,7 @@
                             <div class="paper-item">10. 작은 학교 살리기를 위한 정책적 시도 고찰 작은 학교 특색 교육과정 편성 및 운영을 중심으로_2023_KCI등재</div>
                             <div class="paper-item">11. 전라북도 농·어촌 소규모 학교의 운영 실태와 개선 방안_2020_전주교대대학원석사</div>
                             <div class="paper-item">12. 자유학기제 정책에 따른 소규모 학교 공간 연구 경상북도 지역을 중심으로_2025_교육녹색환경연구학회지</div>
-                            <div class="paper-item">13. 학교규모의 효과 및 적정규모 학교에 관한 탐색적 연구_2023_교육행정연구학술지</div>
+                            <div class="paper-item">13. School 규모의 효과 및 적정규모 학교에 관한 탐색적 연구_2023_교육행정연구학술지</div>
                             <div class="paper-item">14. 작은학교 재학 여부에 따른 교육적 특성 분석 전남교육종단연구를 중심으로_2024_한국교육정치학회</div>
                             <div class="paper-item">15. 적정규모학교 육성정책의 수혜당사자에 대한 실효성과 대안 탐색-경상도 지역을 중심으로_2017_교원대석사</div>
                             <div class="paper-item">16. 지역사회 소규모학교 살리기 정책 방향과 해결과제_2019_콘텐츠학회KCI등재</div>
@@ -241,7 +235,7 @@
 
     <!-- 비밀번호 입력 모달 -->
     <div id="passwordModal" class="fixed inset-0 z-[100] hidden bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl shadow-2xl max-w-sm w-full p-8 modal-enter border border-emerald-100">
+        <div class="bg-white rounded-3xl shadow-2xl max-w-md w-full p-8 modal-enter border border-emerald-100">
             <div class="text-center mb-6">
                 <div class="w-14 h-14 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -250,6 +244,16 @@
                 </div>
                 <h3 class="text-xl font-extrabold text-slate-800">접속 권한 확인</h3>
                 <p class="text-slate-500 text-sm mt-2 font-medium">서비스 연결을 위해 비밀번호를 입력해 주세요.</p>
+            </div>
+
+            <!-- 신규 구글 계정 등록 안내 정보 카드 추가 -->
+            <div class="bg-emerald-50 border border-emerald-100 rounded-2xl p-4 mb-6">
+                <p class="text-emerald-950 text-xs sm:text-[13px] font-semibold leading-relaxed text-left flex items-start gap-2">
+                    <span class="text-emerald-600 select-none">💡</span>
+                    <span>
+                        챗봇의 모든 기능(노트북LM 스튜디오) 사용을 원하시는 선생님은 이메일(<span class="text-emerald-700 underline font-bold">letter0033@gmail.com</span>)로 본인의 구글 계정을 보내주시기 바랍니다.
+                    </span>
+                </p>
             </div>
 
             <div class="space-y-4">
